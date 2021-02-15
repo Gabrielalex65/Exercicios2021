@@ -3,13 +3,13 @@ package entities;
 public class Conta {
 	private Integer numero;
 	private String titular;
-	private Double saldo;
+	protected Double saldo;
 	
 	public Conta() {
 		
 	}
 
-	public Conta(Integer numero, String titular, Double saldo) {
+	public Conta(int numero, String titular, Double saldo) {
 		this.numero = numero;
 		this.titular = titular;
 		this.saldo = saldo;
