@@ -17,7 +17,7 @@ public class Principal {
 		Scanner sc = new Scanner(System.in);
 		List<Funcionario> list = new ArrayList<>();
 		
-		System.out.println("Digite a quantiade de funcionarios");
+		System.out.println("Digite a quantidade de funcionarios");
 		int quantidade = sc.nextInt();
 		for(int index = 0; index < quantidade; index++) {
 			System.out.println("O funcionario é terceirizado? s/n");
@@ -42,6 +42,7 @@ public class Principal {
 				list.add(new Funcionario(nome, hora, valorPorHora));
 			}
 		}
+		
 		for(Funcionario funcionario : list) {
 			System.out.println(funcionario.getNome() + " $ " + String.format("%.2f", funcionario.pagamento()));
 		}
